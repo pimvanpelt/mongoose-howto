@@ -1,6 +1,6 @@
 author: Pim van Pelt <pim@ipng.nl>
 description: A Mongoose OS step by step application build
-version: 1.3
+version: 1.4
 
 libs_version: ${mos.version}
 modules_version: ${mos.version}
