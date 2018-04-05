@@ -2,6 +2,7 @@
 #include "mqtt.h"
 #include "rpc.h"
 #include "mgos_prometheus_metrics.h"
+#include "button-led.h"
 
 static uint32_t s_things=0;
 
@@ -28,6 +29,9 @@ enum mgos_app_init_result mgos_app_init(void) {
 
   // Install a metrics handler that calls 'prometheus_metrics_fn'
   mgos_prometheus_metrics_add_handler(prometheus_metrics_fn, NULL);
+
+  // Initialize the button and LED
+  button_led_init();
 
   return MGOS_APP_INIT_SUCCESS;
 }

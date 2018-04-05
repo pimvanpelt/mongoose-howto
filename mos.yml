@@ -1,6 +1,6 @@
 author: Pim van Pelt <pim@ipng.nl>
 description: A Mongoose OS step by step application build
-version: 1.5
+version: 1.6
 
 libs_version: ${mos.version}
 modules_version: ${mos.version}
@@ -30,6 +30,11 @@ config_schema:
   - ["mqtt.enable", true]
   - ["mqtt.server", "test.mosquitto.org:1883"]
   - ["rpc.mqtt.enable", true]
+  - ["app", "o", {title: "APP settings"}]
+  - ["app.button", "i", {title: "GPIO for button"}]
+  - ["app.button", 0]
+  - ["app.led", "i", {title: "GPIO for LED"}]
+  - ["app.led", 2]
 
 # List of libraries used by this app, in order of initialisation
 libs:
