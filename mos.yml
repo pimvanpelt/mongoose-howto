@@ -1,6 +1,6 @@
 author: Pim van Pelt <pim@ipng.nl>
 description: A Mongoose OS step by step application build
-version: 1.4
+version: 1.5
 
 libs_version: ${mos.version}
 modules_version: ${mos.version}
@@ -41,6 +41,7 @@ libs:
   - origin: https://github.com/mongoose-os-libs/rpc-uart
   - origin: https://github.com/mongoose-os-libs/mqtt
   - origin: https://github.com/mongoose-os-libs/rpc-mqtt
+  - origin: https://github.com/mongoose-os-libs/prometheus-metrics
 
 # Used by the mos tool to catch mos binaries incompatible with this file format
 manifest_version: 2017-05-18
